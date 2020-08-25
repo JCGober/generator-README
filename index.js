@@ -36,7 +36,7 @@ inquirer
     }
 ]).then(function(info){
 
-    fs.append(README.md, JSON.stringify(info, null, 2), function(err){
+    fs.appendFile(read.md, "Hello World", function(err){
 
         if (err){
            return console.log(err) 
