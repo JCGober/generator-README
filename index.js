@@ -1,4 +1,6 @@
-var inquirer = require("inquirer")
+let inquirer = require("inquirer");
+
+var fs = require("fs");
 
 inquirer
 .prompt([
@@ -32,8 +34,21 @@ inquirer
         message: "What is your contact email?",
         name: "Email"
     }
-]).then(function(answers){
+]).then(function(info){
 
-    console.log(answers)
+    fs.append(README.md, JSON.stringify(info, null, 2), function(err){
 
-})
+        if (err){
+           return console.log(err) 
+
+        }
+
+        console.log("Sucessfully created README!")
+
+
+    });
+
+
+    
+
+});
