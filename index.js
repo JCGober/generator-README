@@ -12,4 +12,8 @@ inquirer
         message: "Please Write a description of your application:",
         name: "description"
     }
-])
+]).then(function(answers){
+
+    console.log(answers)
+
+})
