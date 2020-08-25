@@ -34,21 +34,8 @@ inquirer
         message: "What is your contact email?",
         name: "Email"
     }
-]).then(function(info){
+]).then(function(answers){
 
-    fs.appendFile(read.md, "Hello World", function(err){
-
-        if (err){
-           return console.log(err) 
-
-        }
-
-        console.log("Sucessfully created README!")
-
-
-    });
-
-
-    
+    console.log(answers)
 
 });
