@@ -1,21 +1,30 @@
-# generator-README
+# Project Title: README Generator
 
-*README Generator*
+    ## *Description:* 
 
-This is an application that is run in the terminal. It prompts you for information about your project and puts the information into a README.md file. 
+    This is an application that is run in the terminal. It prompts you for information about your project and puts the info into a README.md file.
 
-This app will prompt you for the following information in the command line:
+    ## *Table of Contents:*
 
-1.) Project Title
+    n/a
 
-2.) Description/relative Information
+    ## *Instructions for Installation:*
 
-3.)License of App, via a list of choices that generates specific badge for README.md
+    Download and unzip file
 
-4.) Github username 
+    ## *Usage Information*
 
-5.)Questions section, which includes creators contact Email Address
+    Use with Caution
 
+    ## *License:* 
 
-Questions about this application?
-Contact Jared Gober: jaredcgober@gmail.com
+    GOBER LTD
+
+    ## *GitHub User:* 
+
+    JCGober
+
+    ## *Contact Email for any additional questions:* 
+    
+    jaredcgober@gmail.com
+    
