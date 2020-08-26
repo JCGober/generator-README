@@ -61,6 +61,18 @@ inquirer
 
     ${answers.description}
 
+    ## *Table of Contents:*
+
+    ${answers.table}
+
+    ## *Instructions for Installation:*
+
+    ${answers.install}
+
+    ## *Usage Information*
+
+    ${answers.usage}
+
     ## *License:* 
 
     ${answers.license}
