@@ -13,15 +13,34 @@ inquirer
         type: "input",
         message: "Please Write a description of your application:",
         name: "description"
-    }, 
+    },
+    {
+        type: "input",
+        message: "Table Of Contents:",
+        name: "table"
+    },
+    {
+        type: "input",
+        message: "Please add instalation information:",
+        name: "install"
+
+    },
+    {
+        type: "input",
+        message: "Please add any additional usage information:",
+        name: "usage"
+
+    },
     {
         type:"list",
         message: "Which license does your project have?",
         name: "license",
         choices: [
-            "option1",
-            "option2",
-            "none"
+            "MIT",
+            "APACHE 2.0",
+            "GPL 3.0",
+            "GOBER LTD",
+            "NONE"
         ]
     },
     {
