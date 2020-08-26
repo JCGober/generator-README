@@ -23,13 +23,11 @@ inquirer
         type: "input",
         message: "Please add instalation information:",
         name: "install"
-
     },
     {
         type: "input",
         message: "Please add any additional usage information:",
         name: "usage"
-
     },
     {
         type:"list",
@@ -84,10 +82,9 @@ inquirer
     ## *Contact Email for any additional questions:* 
     
     ${answers.Email}
-
     `;
 
-    fs.writeFile("README2.md", readme, function(err){
+    fs.writeFile("README.md", readme, function(err){
 
         if (err) {
             return console.log(err)
