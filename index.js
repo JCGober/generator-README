@@ -36,6 +36,11 @@ inquirer
     }
 ]).then(function(answers){
 
-    console.log(answers)
+    fs.writeFile("README.md", JSON.stringify(answers), function(err){
+
+        if (err) {
+            return console.log(err)
+        }
+    })
 
 });
