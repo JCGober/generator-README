@@ -36,7 +36,27 @@ inquirer
     }
 ]).then(function(answers){
 
-    fs.writeFile("README.md", JSON.stringify(answers), function(err){
+    let readme= `# Project Title: ${answers.project}
+
+    ## *Description:* 
+
+    ${answers.description}
+
+    ## *License:* 
+
+    ${answers.license}
+
+    ## *GitHub User:* 
+
+    ${answers.gitUser}
+
+    ## *Contact Email for any additional questions:* 
+    
+    ${answers.Email}
+
+    `;
+
+    fs.writeFile("README2.md", readme, function(err){
 
         if (err) {
             return console.log(err)
